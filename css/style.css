@@ -1,339 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-
-nav ul li{
-list-style-type: none;
-}
-
-.img-footer{
-    width: 10%;
-    height: 20%;
-}
-
-#Grilla{
-    display: grid;
-}
-
-#Grilla2{
-    display: grid;
-}
-
-
-
-/*Mobile Index*/
-
-@media only screen and (max-width: 600px){
-
-    #Grilla{
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 200px 400px 200px 100px;
-        grid-template-areas: "header"
-                             "header"
-                             "main"
-                             "main"
-                             "footer";
-    
-    }
-
-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        grid-area: header;
-        padding: 2rem;
-               
-}
-
-nav{
-    width: 100%;
-}
-
-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav ul li{
-    transition: all;
-}
-
-nav ul li:hover{
-    font-size: 18px;
-    }
-
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-section{
-    width: 80%;
-}
-
-p{
-    padding: 1rem;
-}
-
-footer{
-    grid-area: footer;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-
-}
-
-}
-
-/* Desktop Index*/
-@media only screen and (min-width: 600px){
-
-    #Grilla{
-        height: 1000px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 600px 100px;
-        grid-template-areas: "header header"
-                             "main main"
-                             "footer footer";        
-    }
-
-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        grid-area: header;
-        gap: 100px;               
-}
-
-nav{
-    width: 100%;
-    }
-
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2rem;
-
-}
-
-nav ul li{
-    transition: all;
-}
-
-nav ul li:hover{
-    font-size: 20px;
-    }
-
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-
-.sectionindex{
-    width: 60%;
-}
-
-.sectionindex p{
-    padding: 2rem;
-}
-
-footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content:flex-start;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-}
-
-
-/*Mobile Caracteristicas*/
-
-@media only screen and (max-width: 600px){
-
-    #Grilla2{
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 200px 200px 200px 200px 200px 200px 200px 200px 200px 100px;
-        grid-template-areas: "header"
-                             "header"
-                             "main"
-                             "main"
-                             "main"
-                             "main"
-                             "main"
-                             "main"
-                             "main"
-                             "main"
-                             "footer";
-    
-    }
-
-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        grid-area: header;
-        padding: 2rem;
-               
-}
-
-nav{
-    width: 100%;
-}
-
-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    
-
-}
-
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-img{
-    width: 100%;
-}
-
-section{
-    width: 80%;
-}
-
-p{
-    padding: 1rem;
-}
-
-footer{
-    grid-area: footer;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-
-}
-
-}
-
-/* Desktop Caracteristicas*/
-@media only screen and (min-width: 600px){
-
-    #Grilla2{
-        
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 150px 600px 100px;
-        grid-template-areas: "header header header header"
-                             "main main main main"
-                             "footer footer footer footer";
-        
-    
-        
-    }
-
-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        grid-area: header;
-        padding: 2rem;
-               
-}
-
-nav{
-    width: 100%;
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2rem;
-
-}
-
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:flex-start;
-    grid-area: main;
-    width: 100%;
-    height: 400px;
-    padding: 7rem 0;
-     
-}
-
-.caract{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 img{
     width: 80%;
+    height: 80%;
 }
 
-p{
-    padding: 2rem;
+#carctmain{
+    display: grid;
+    height: 565px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1 img2 img3 img4"
+                         "text1 text2 text3 text4";
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+
 }
 
-.transformacion1{
-   transform: rotate(350deg);
+.imag1{
+    grid-area: img1;
+    width: 200px;
 }
-
-.transformacion2{
-    transform: scale(1,1);
+.imag4{
+    grid-area: img2;
+    width: 200px;
 }
-
-.transformacion3{
-    transform: scale(1,0.8);
+.imag3{
+    grid-area: img3;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.transformacion4{
-    transform: rotate(350deg);
+.imag4{
+    grid-area: img4;
+}
+.textoC1{
+    grid-area: text1;
+}
+.textoC2{
+    grid-area: text2;
+}
+.textoC3{
+    grid-area: text3;
+}
+.textoC4{
+    grid-area: text4;
 }
 
 footer{
-    grid-area: footer;
+
+    background-color: rgb(15, 82, 170);
     display: flex;
     flex-direction: row-reverse;
-    justify-content:flex-start;
-    align-items: center;
-    padding: 0 2rem;
+    padding: 1rem;
 }
 
+footer div {
+    padding: 0 0.3rem;
 }
 
-
-
-
-    
+.bi-facebook{
+    font-size: 40px;
+    color: aliceblue;
+}
+.bi-twitter{
+    font-size: 40px;
+    color: rgb(220, 220, 235);
+}
+.bi-instagram{
+    font-size: 40px;
+    color: rgb(236, 231, 230);
+}
