@@ -1,11 +1,98 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
-img{
-    width: 80%;
-    height: 80%;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-#carctmain{
+
+/*Index Mobile*/
+@media only screen and (max-width: 800px){
+
+    .indexmain1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .indexmain1 div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .indexmain1 div iframe{
+        width: 90%;
+    }
+
+    .indexmain1 div p{
+        text-align: justify;
+        width: 90%;
+    }
+}
+/*Index Desktop*/
+@media only screen and (min-width: 800px){
+
+    .indexmain2{
+        height: 600px;    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .indexmain2 div{
+        padding: 0 1rem;
+    }
+
+    .indexmain2 div iframe:hover{
+        transform: scale(1.1);
+    }
+
+    .indexmain2 div p{
+        text-align: justify;
+        
+    }
+}
+
+/*Caracteristicas Mobile*/
+@media only screen and (max-width: 800px){
+    
+    main{
+        margin-top: 1rem;
+    }
+
+    .caractmain2{
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+    .caractmain2 div{
+    display: flex;
+    justify-content: center;
+    }
+
+    .caractmain2 div img{
+    width: 80%;
+    height: 80%;
+    }
+
+    .caractmain2 div p{
+    width: 80%;
+    height: 80%;
+    text-align: justify;
+    }
+
+}
+
+/*Caracteristicas Desktop*/
+@media only screen and (min-width: 800px){
+
+    #carctmain{
     display: grid;
     height: 565px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,38 +102,45 @@ img{
     align-items: center;
     justify-items: center;
 
-}
+    }
 
-.imag1{
+    #carctmain img{
+        width: 90%;
+        height: 200px;
+    }
+
+    #carctmain p{
+        width: 90%;
+        height: 200px;
+        text-align: justify;
+    }
+    .imag1{
     grid-area: img1;
-    width: 200px;
-}
-.imag4{
+    }
+    .imag4{
     grid-area: img2;
-    width: 200px;
-}
-.imag3{
-    grid-area: img3;
-    width: 200px;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imag4{
+    }
+    .imag3{
+    grid-area: img3; 
+    width: 90%;
+    height: 200px;
+    }
+    .imag4{
     grid-area: img4;
-}
-.textoC1{
+    }
+    .textoC1{
     grid-area: text1;
-}
-.textoC2{
+    }
+    .textoC2{
     grid-area: text2;
-}
-.textoC3{
+    }
+    .textoC3{
     grid-area: text3;
-}
-.textoC4{
+    }
+    .textoC4{
     grid-area: text4;
+    }
+
 }
 
 footer{
