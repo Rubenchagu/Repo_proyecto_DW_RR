@@ -1,0 +1,67 @@
+
+.tamanhoslide{
+    height: 400px;
+}
+
+.imgSlide{
+    height: 400px;
+}
+
+.pslide{
+    width: 100%;
+    text-align: center;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 767px) {
+
+    .mainhistoria{
+        height: 1200px;
+    }
+    
+    .tamanhoslide{
+        height: 300px;
+    }
+    .imgSlide{
+        height: 300px;
+    }
+
+    .textoHis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+
+/*Tablet - Desktop*/
+@media only screen and (min-width: 768px) {
+
+    .mainhistoria{
+        height: 900px;
+    }
+    
+    .textoHis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+}
+
