@@ -14,11 +14,7 @@
 
 /*Mobile*/
 @media only screen and (max-width: 767px) {
-
-    .mainhistoria{
-        height: 1200px;
-    }
-    
+ 
     .tamanhoslide{
         height: 300px;
     }
@@ -44,11 +40,7 @@
 
 /*Tablet - Desktop*/
 @media only screen and (min-width: 768px) {
-
-    .mainhistoria{
-        height: 900px;
-    }
-    
+   
     .textoHis{
         display: flex;
         flex-direction: column;

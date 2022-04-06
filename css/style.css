@@ -38,10 +38,10 @@
     .indexmain div {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       padding: 0.5rem; }
     .indexmain iframe {
-      height: 90%; }
+      height: 80%; }
     .indexmain .formatoTexto {
       font-size: 1.2vw; } }
 
@@ -65,7 +65,7 @@
       align-items: flex-start;
       padding: 0.5rem; }
     .indexmain iframe {
-      height: 90%; }
+      height: 80%; }
     .indexmain .formatoTexto {
       font-size: 13px; } }
 
@@ -81,8 +81,6 @@
 
 /*Mobile*/
 @media only screen and (max-width: 767px) {
-  .mainhistoria {
-    height: 1200px; }
   .tamanhoslide {
     height: 300px; }
   .imgSlide {
@@ -100,8 +98,6 @@
 
 /*Tablet - Desktop*/
 @media only screen and (min-width: 768px) {
-  .mainhistoria {
-    height: 900px; }
   .textoHis {
     display: flex;
     flex-direction: column;
@@ -113,53 +109,31 @@
       flex-direction: column;
       align-items: center; } }
 
-/*Mobile*/
-@media only screen and (max-width: 767px) {
-  .maincaract div {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem; }
-    .maincaract div div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-  .imgcaract {
-    width: 100%;
-    height: 300px; } }
+.maincaract img {
+  height: 250px; }
 
-/*Tablet - Desktop*/
-@media only screen and (min-width: 768px) {
-  .maincaract div {
-    display: flex;
-    width: 90vw;
-    margin: 1rem;
-    justify-content: center; }
-    .maincaract div div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-  .imgcaract {
-    width: 90%;
-    height: 400px; } }
+.maincaract section {
+  margin: 0.5rem; }
+
+.textomedio {
+  display: flex;
+  justify-content: center;
+  border: black 2px solid; }
+  .textomedio p {
+    text-align: justify;
+    margin-top: 1rem;
+    font-weight: bold; }
+
+.tamanoDiv {
+  height: 450px; }
+
+.tamanoText {
+  height: 324px; }
 
 .maincripto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2rem; }
-
-.textcrypto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 1rem; }
-
-.imgcrypto {
-  width: 100%;
-  height: 600px; }
-
-.videocrypto {
-  width: 90%; }
+  margin: 1rem; }
+  .maincripto section {
+    margin-top: 0.5rem; }
 
 .maincontacto {
   height: 565px;
