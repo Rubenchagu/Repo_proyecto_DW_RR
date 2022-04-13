@@ -145,6 +145,11 @@ article img {
   .maincripto section {
     margin-top: 0.5rem; }
 
+/*Mobile*/
+@media only screen and (max-width: 726px) {
+  .textocrypto {
+    font-size: 3vw; } }
+
 /*Tablet*/
 @media only screen and (min-width: 726px) and (max-width: 1024px) {
   .textocrypto {

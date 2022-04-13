@@ -17,8 +17,14 @@
     }
 }
 
-/*Tablet*/
+/*Mobile*/
+@media only screen and (max-width: 726px) {
+    .textocrypto{
+        font-size: 3vw;
+    }
+}
 
+/*Tablet*/
 @media only screen and (min-width:726px) and (max-width:1024px) {
     .textocrypto{
         font-size: 1.5vw;
