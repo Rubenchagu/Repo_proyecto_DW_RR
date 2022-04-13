@@ -2,7 +2,12 @@
 .tamanoText{
 
     height: 324px;
-
+    h5{
+        text-align: center;
+    }
+    p{
+        padding-left: 2rem;
+    }
 }
 
 .maincripto{
@@ -12,4 +17,22 @@
     }
 }
 
+/*Tablet*/
+
+@media only screen and (min-width:726px) and (max-width:1024px) {
+    .textocrypto{
+        font-size: 1.5vw;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+    .zoomvideocrypyo{
+        iframe{
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
 

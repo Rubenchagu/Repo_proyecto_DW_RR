@@ -1,13 +1,28 @@
-/*Mobile*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@media only screen and (max-width: 767px) {
-  .TituloHome {
-    display: flex;
-    justify-content: center; }
-    .TituloHome h1 {
-      width: 50%;
-      font-size: 24px;
-      margin-top: 2rem; }
+.bgindex {
+  background-image: url("../img/bgindex.jpeg");
+  background-size: 100vw; }
+
+.TituloHome {
+  display: flex;
+  justify-content: center; }
+  .TituloHome h1 {
+    width: 50%;
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white; }
+
+.formatoTexto {
+  color: white;
+  font-weight: bold;
+  background-color: rgba(10, 5, 68, 0.499); }
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+  .TituloHome h1 {
+    font-size: 24px; }
   .indexmain {
     display: flex;
     flex-direction: column;
@@ -22,38 +37,33 @@
       font-size: 14px; } }
 
 /*Tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .TituloHome {
-    display: flex;
-    justify-content: center; }
-    .TituloHome h1 {
-      width: 50%;
-      font-size: 34px;
-      margin-top: 2rem; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .TituloHome h1 {
+    font-size: 34px; }
   .indexmain {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 500px; }
-    .indexmain div {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0.5rem; }
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: "video1 texto1" "video1 texto2"; }
     .indexmain iframe {
       height: 80%; }
     .indexmain .formatoTexto {
-      font-size: 1.2vw; } }
+      font-size: 1.2vw; }
+  .gridvideo {
+    grid-area: video1;
+    margin-left: 1rem; }
+  .gridtexto1 {
+    grid-area: texto1;
+    margin-left: 1rem; }
+  .gridtexto2 {
+    grid-area: texto2;
+    margin-left: 1rem; } }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
-  .TituloHome {
-    display: flex;
-    justify-content: center; }
-    .TituloHome h1 {
-      width: 50%;
-      font-size: 40px;
-      margin-top: 2rem; }
+  .TituloHome h1 {
+    font-size: 40px; }
   .indexmain {
     display: flex;
     flex-direction: row;
@@ -63,11 +73,12 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      width: 420px; }
     .indexmain iframe {
       height: 80%; }
     .indexmain .formatoTexto {
-      font-size: 13px; } }
+      font-size: 1vw; } }
 
 .tamanhoslide {
   height: 400px; }
@@ -79,38 +90,33 @@
   width: 100%;
   text-align: center; }
 
+article img {
+  width: 90%;
+  height: 400px; }
+
+.textoHis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; }
+  .textoHis div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem; }
+
 /*Mobile*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .tamanhoslide {
     height: 300px; }
   .imgSlide {
-    height: 300px; }
-  .textoHis {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem; }
-    .textoHis div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; } }
-
-/*Tablet - Desktop*/
-@media only screen and (min-width: 768px) {
-  .textoHis {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem; }
-    .textoHis div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; } }
+    height: 300px; } }
 
 .maincaract img {
   height: 250px; }
+  .maincaract img:hover {
+    transform: rotateY(180deg); }
 
 .maincaract section {
   margin: 0.5rem; }
@@ -129,18 +135,50 @@
 
 .tamanoText {
   height: 324px; }
+  .tamanoText h5 {
+    text-align: center; }
+  .tamanoText p {
+    padding-left: 2rem; }
 
 .maincripto {
   margin: 1rem; }
   .maincripto section {
     margin-top: 0.5rem; }
 
+/*Tablet*/
+@media only screen and (min-width: 726px) and (max-width: 1024px) {
+  .textocrypto {
+    font-size: 1.5vw; } }
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+  .zoomvideocrypyo iframe:hover {
+    transform: scale(1.1); } }
+
 .maincontacto {
-  height: 565px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem; }
+
+.titulocontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/background1.jpg");
+  background-size: 100vw;
+  height: 300px;
+  padding: 2rem; }
+  .titulocontacto h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder; }
+  .titulocontacto p {
+    text-align: center;
+    color: white;
+    font-weight: bolder; }
 
 * {
   margin: 0;

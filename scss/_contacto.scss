@@ -1,8 +1,30 @@
 
 .maincontacto{
-    height: 565px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
+}
+
+.titulocontacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/background1.jpg");
+    background-size: 100vw;
+    height: 300px;
+    padding: 2rem;
+        h1{
+            text-align: center;
+            color:$colortextoindex;
+            font-weight: bolder;
+        }
+        p{
+            text-align: center;
+            color:$colortextoindex;
+            font-weight: bolder;
+        }
+
 }

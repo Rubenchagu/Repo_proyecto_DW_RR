@@ -3,6 +3,9 @@
     .maincaract{
         img{
             height: 250px;
+            &:hover{
+                transform: rotateY(180deg);                
+            }
         }
 
         section{
@@ -19,7 +22,6 @@
             text-align: justify;
             margin-top: 1rem;
             font-weight: bold;
-                      
         }
         
     }

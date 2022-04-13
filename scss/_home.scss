@@ -1,15 +1,37 @@
 
+.bgindex{
+    background-image: url("../img/bgindex.jpeg");
+    background-size: 100vw;
+    
+}
+
+.TituloHome{
+    display: flex;
+    justify-content: center;
+    h1{
+        width: 50%;
+        font-size: 24px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: $colortextoindex;            
+    }
+}
+
+.formatoTexto{
+    color: $colortextoindex;
+    font-weight: bold;
+    background-color: $BgcolorTextoIndex;
+}
+
 
 /*Mobile*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .TituloHome{
-        display: flex;
-        justify-content: center;
+        
         h1{
-            width: 50%;
-            font-size: 24px;
-            margin-top: 2rem;
+            font-size: 24px;         
         }
     }
 
@@ -36,31 +58,22 @@
 }
 
 /*Tablet*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     .TituloHome{
-        display: flex;
-        justify-content: center;
+        
         h1{
-            width: 50%;
-            font-size: 34px;
-            margin-top: 2rem;
+            font-size: 34px;         
         }
     }
 
     .indexmain{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        height: 500px;
-        
-        div{
-            display: flex;
-            justify-content: center;
-            align-items:flex-start;
-            padding: 0.5rem;
-                       
-        }
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px;
+        grid-template-areas: "video1 texto1"
+                             "video1 texto2";
 
         iframe{
             height: 80%;
@@ -71,18 +84,32 @@
         }
     }
 
+    .gridvideo{
+        grid-area: video1;
+        margin-left: 1rem;
+            
+    }
+
+    .gridtexto1{
+        grid-area: texto1;
+        margin-left: 1rem;
+    }
+
+    .gridtexto2{
+        grid-area: texto2;
+        margin-left: 1rem;
+    }
+
 }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
 
+   
     .TituloHome{
-        display: flex;
-        justify-content: center;
+        
         h1{
-            width: 50%;
-            font-size: 40px;
-            margin-top: 2rem;
+            font-size: 40px;         
         }
     }
 
@@ -96,7 +123,8 @@
             display: flex;
             justify-content: center;
             align-items:flex-start;
-            padding: 0.5rem;           
+            padding: 0.5rem; 
+            width: 420px;          
         }
 
         iframe{
@@ -104,7 +132,7 @@
         }
 
         .formatoTexto{
-            font-size: 13px;
+            font-size: 1vw;
         }
         
     }
